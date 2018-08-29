@@ -2,15 +2,12 @@
 
 #:TAGS:
 
-use 5.022;
-
 use strict;  use warnings;  use autodie qw/:all/;
 
-use Data::Dump;
-################################################################################
 use Inline Config =>
   disable => 'clean_after_build',
   name    => 'XS::Wrap';
+
 use Inline C => <<'EOC';
 int count_set_bits(long v) {
     int c;
