@@ -1,4 +1,4 @@
-package XS::Wrap;
+package Bit::Twiddling;
 
 use strict;
 use warnings;
@@ -6,7 +6,7 @@ use warnings;
 our $VERSION = '0.01';
 
 require XSLoader;
-XSLoader::load('XS::Wrap', $VERSION);
+XSLoader::load('Bit::Twiddling', $VERSION);
 
 use Exporter 'import';
 

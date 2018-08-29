@@ -15,7 +15,7 @@ if (0) {
 ################################################################################
 use Test::Most qw(no_plan);
 
-use XS::Wrap ':all';
+use Bit::Twiddling ':all';
 
 # use File::Spec; Test::Most->builder->output(File::Spec->devnull);
 

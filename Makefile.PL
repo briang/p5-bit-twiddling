@@ -4,10 +4,10 @@ use warnings;
 use ExtUtils::MakeMaker;
 
 WriteMakefile(
-    NAME             => 'XS::Wrap',
-    AUTHOR           => q{brian <briang@cpan.org>},
-    VERSION_FROM     => 'lib/XS/Wrap.pm',
-    ABSTRACT_FROM    => 'lib/XS/Wrap.pm',
+    NAME             => 'Bit::Twiddling',
+    AUTHOR           => q{Brian Greenfield <briang@cpan.org>},
+    VERSION_FROM     => 'lib/Bit/Twiddling.pm',
+    ABSTRACT_FROM    => 'lib/Bit/Twiddling.pm',
     LICENSE          => 'artistic_2',
     PL_FILES         => {},
     MIN_PERL_VERSION => '5.006',

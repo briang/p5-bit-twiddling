@@ -21,7 +21,7 @@ long nearest_higher_power_of_2(long v) {
     return v + 1;
 }
 
-MODULE = XS::Wrap  PACKAGE = XS::Wrap
+MODULE = Bit::Twiddling  PACKAGE = Bit::Twiddling
 
 PROTOTYPES: DISABLE
 

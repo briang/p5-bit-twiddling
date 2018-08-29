@@ -50,8 +50,7 @@ TODO: {
     "placeholder date/time"       => qr(Date/time)
   );
 
-  module_boilerplate_ok('lib/XS/Wrap.pm');
+  module_boilerplate_ok('lib/Bit/Twiddling.pm');
 
 
 }
-

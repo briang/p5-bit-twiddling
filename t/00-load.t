@@ -7,7 +7,7 @@ use Test::More;
 plan tests => 1;
 
 BEGIN {
-    use_ok( 'XS::Wrap' ) || print "Bail out!\n";
+    use_ok( 'Bit::Twiddling' ) || print "Bail out!\n";
 }
 
-diag( "Testing XS::Wrap $XS::Wrap::VERSION, Perl $], $^X" );
+diag( "Testing Bit::Twiddling $Bit::Twiddling::VERSION, Perl $], $^X" );
