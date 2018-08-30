@@ -18,3 +18,5 @@ XS-Wrap-*
 XS-Wrap-*.tar.gz
 _Inline/
 *~
+\**\*
+\#*\#
