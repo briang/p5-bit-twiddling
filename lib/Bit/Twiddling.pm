@@ -70,6 +70,17 @@ Bit::Twiddling ':all'>.
 
 =head1 FUNCTIONS
 
+The functions in this module all expect a single 64-bit integer
+argument, but will convert string to numeric if needed (and give an
+C<Argument "whatevs" isn't numeric in subroutine entry> warning). If
+the argument is C<undef>, it will also be treated as if it were zero
+and generate a C<Use of uninitialized value in subroutine entry>
+warning.
+
+This distribution is designed to work with 64-bit ints and has NOT
+BEEN TESTED WITH 32-BIT PERLS. I think it should be OK but I know one
+test in C<nearest.t> will definately fail.
+
 =head2 count_set_bits
 
     $bits = count_set_bits($number);
@@ -78,14 +89,26 @@ C<count_set_bits> will return the count of how many bits are set (1)
 in the binary representation of C<$number>. C<$number> is assumed to
 be compatible with C's C<long int> type (probably 64-bits).
 
-XXX floats, strings, undef etc
-
 =head2 nearest_higher_power_of_2
 
     $power_of_2 = nearest_higher_power_of_2($number);
 
 C<nearest_higher_power_of_2> will return the largest power-of-two that
 is greater-than-or-equal-to C<$number>.
+
+=head1 EXAMPLES
+
+There are two scripts in the C<examples> folder of the dist.
+
+=head2 c.pl
+
+This script contains the original C code that was used with
+C<Inline::C> to generate the module's XS.
+
+=head2 benchmarks.pl
+
+Some benchmarks of this module versus various pure Perl
+implementations.
 
 =head1 AUTHOR
 
