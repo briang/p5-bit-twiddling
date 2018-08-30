@@ -139,6 +139,11 @@ tutorial
 
 =head1 LICENSE AND COPYRIGHT
 
-MIT # XXX
+Copyright 2018 Brian Greenfield
+
+This program is free software; you can redistribute it and/or modify
+it under the same terms as Perl itself.
+
+See L<The "Artistic License"|http://dev.perl.org/licenses/artistic.html>
 
 =cut
