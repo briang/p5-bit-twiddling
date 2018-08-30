@@ -13,7 +13,7 @@ if (0) {
     diag($_), $_->() for grep { /^test_/ } keys %::
 }
 ################################################################################
-use Test::Most qw(no_plan);
+use Test::More;
 
 use Bit::Twiddling ':all';
 
