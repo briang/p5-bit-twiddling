@@ -9,7 +9,11 @@ Bit::Twiddling - Low-level bit-twiddling hacks
 
 =head1 VERSION
 
-Version 0.01 - 20180829
+Version 0.02 - 20180831
+
+=cut
+
+our $VERSION = '0.02';
 
 =head1 SYNOPSIS
 
@@ -31,8 +35,6 @@ C, all taken from the L<Bit Twiddling
 Hacks|http://graphics.stanford.edu/~seander/bithacks.html> webpage.
 
 =cut
-
-our $VERSION = '0.01';
 
 require XSLoader;
 XSLoader::load('Bit::Twiddling', $VERSION);
