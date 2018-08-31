@@ -4,7 +4,7 @@
 
 use 5.022;
 
-use strict;  use warnings;  use autodie qw/:all/;
+use strict;  use warnings;
 
 BEGIN { # XXX
     if ($ENV{EMACS}) {
