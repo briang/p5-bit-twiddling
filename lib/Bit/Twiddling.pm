@@ -64,8 +64,6 @@ nearest_higher_power_of_2
 Additionally, you can request the export of all functions by C<use
 Bit::Twiddling ':all'>.
 
-# XXX is that true?
-
 =cut
 
 =head1 FUNCTIONS
