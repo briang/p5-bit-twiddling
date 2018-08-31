@@ -6,9 +6,16 @@ use 5.022;
 
 use strict;  use warnings;  use autodie qw/:all/;
 
-use Data::Dump;
+BEGIN { # XXX
+    if ($ENV{EMACS}) {
+        chdir '..' until -d 't';
+        use lib qw(blib/lib blib/arch)
+    }
+}
 
-if (0) {
+use Data::Dump; # XXX
+
+if (0) { # XXX
     no strict 'refs';
     diag($_), $_->() for grep { /^test_/ } keys %::
 }
