@@ -1,5 +1,8 @@
 Revision history for Bit::Twiddling
 
+0.03    2018-08-31
+        remove C<use Data::Dump> from tests
+
 0.02    2018-08-31
         remove C<use autodie> from tests
 
