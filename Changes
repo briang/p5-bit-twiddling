@@ -1,5 +1,7 @@
-Revision history for XS-Wrap
+Revision history for Bit::Twiddling
 
-0.01    Date/time
-        First version, released on an unsuspecting world.
+0.02    2018-08-31
+        remove C<use autodie> from tests
 
+0.01    2018-08-31
+        First release
