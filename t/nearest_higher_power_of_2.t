@@ -13,7 +13,7 @@ BEGIN { # XXX
     }
 }
 
-use Data::Dump; # XXX
+# use Data::Dump; # XXX
 
 if (0) { # XXX
     no strict 'refs';
