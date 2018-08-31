@@ -29,6 +29,7 @@ use Bit::Twiddling ':all';
 
 for ( [0, 1], [1, 1], [2, 2], [3, 4], [2**55 - 1234, 2**55] ) {
     my ($input, $output) = @$_;
+    $output = sprintf "%d", $output;
     is nearest_higher_power_of_2($input), $output, "nhpo2($input) returns $output";
 }
 
