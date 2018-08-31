@@ -1,5 +1,8 @@
 Revision history for Bit::Twiddling
 
+0.04    2018-08-31
+        fix a test t/nearest_higher_power_of_2.t
+
 0.03    2018-08-31
         remove C<use Data::Dump> from tests
 
