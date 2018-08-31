@@ -17,14 +17,13 @@ WriteMakefile(
         'ExtUtils::MakeMaker' => '0',
     },
     BUILD_REQUIRES => {
-        'Inline::C' => '0'
+        # 'Inline::C' => '0'
     },
     TEST_REQUIRES => {
         'Test::More' => '0',
+        'Test::Warn' => '0',
     },
     PREREQ_PM => {
-        #'ABC'              => '1.6',
-        #'Foo::Bar::Module' => '5.0401',
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'XS-Wrap-*' },
