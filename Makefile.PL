@@ -3,7 +3,7 @@ use 5.010;
 use strict;
 use warnings;
 
-use ExtUtils::MakeMaker;
+use ExtUtils::MakeMaker 6.48;
 
 WriteMakefile(
     NAME             => 'Bit::Twiddling',
@@ -14,7 +14,7 @@ WriteMakefile(
     PL_FILES         => {},
     MIN_PERL_VERSION => '5.010',
     CONFIGURE_REQUIRES => {
-        'ExtUtils::MakeMaker' => '0',
+        'ExtUtils::MakeMaker' => '6.48',
     },
     BUILD_REQUIRES => {
         # 'Inline::C' => '0'
