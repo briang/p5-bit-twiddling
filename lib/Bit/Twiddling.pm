@@ -120,7 +120,8 @@ XXX github
 
 =head1 BUGS
 
-XXX GitHub issue
+Please use report any bugs you find to L<GitHub
+issues|https://github.com/briang/p5-bit-twiddling/issues>.
 
 =head1 ACKNOWLEDGEMENTS
 
