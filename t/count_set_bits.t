@@ -22,6 +22,7 @@ if (0) { # XXX
 ################################################################################
 use Test::More;
 use Test::Warn;
+use Config;
 
 use Bit::Twiddling ':all';
 
@@ -49,7 +50,11 @@ warning_like {
 } qr/Use of uninitialized value in subroutine entry/,
   'count_set_bits(undef) gives a warning';
 
-# SHOULD FAIL if ints aren't 64 bits
-is count_set_bits(-1), 64, 'count_set_bits(-1) returns 64';
+SKIP: {
+    skip q(perl not compiled with 'use64bitall')
+      unless defined $Config{use64bitall};
+
+    is count_set_bits(-1), 64, 'count_set_bits(-1) returns 64';
+}
 
 done_testing;

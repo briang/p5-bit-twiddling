@@ -22,6 +22,7 @@ WriteMakefile(
     TEST_REQUIRES => {
         'Test::More' => '0',
         'Test::Warn' => '0',
+        'Config'     => '0',
     },
     PREREQ_PM => {
     },

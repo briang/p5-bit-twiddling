@@ -22,15 +22,27 @@ if (0) { # XXX
 ################################################################################
 use Test::More;
 use Test::Warn;
+use Config;
 
 use Bit::Twiddling ':all';
 
 # use File::Spec; Test::Most->builder->output(File::Spec->devnull);
 
-for ( [0, 1], [1, 1], [2, 2], [3, 4], [2**55 - 1234, 2**55] ) {
+for ( [0, 1], [1, 1], [2, 2], [3, 4]) {
     my ($input, $output) = @$_;
     $output = sprintf "%d", $output;
     is nearest_higher_power_of_2($input), $output, "nhpo2($input) returns $output";
+}
+
+is nearest_higher_power_of_2( 2**27 - 1234 ), 2**27,
+  "nhpo2(2**27 - 1234) returns 2**27";
+
+SKIP: {
+    skip q(perl not compiled with 'uselongdouble')
+      unless defined $Config{uselongdouble};
+
+    is nearest_higher_power_of_2( 2**55 - 1234 ), 2**55,
+      "nhpo2(2**55 - 1234) returns 2**55";
 }
 
 is nearest_higher_power_of_2("12"), 16, 'nhpo2("12") returns 16';
