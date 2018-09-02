@@ -7,7 +7,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME             => 'Bit::Twiddling',
-    AUTHOR           => q{Brian Greenfield <briang@cpan.org>},
+    AUTHOR           => 'Brian Greenfield <briang@cpan.org>',
     VERSION_FROM     => 'lib/Bit/Twiddling.pm',
     ABSTRACT_FROM    => 'lib/Bit/Twiddling.pm',
     LICENSE          => 'perl_5',
