@@ -28,4 +28,18 @@ WriteMakefile(
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean => { FILES => 'Bit-Twiddling-*' },
+    META_MERGE         => {
+        'meta-spec'    => { version => 2 },
+        resources      => {
+            bugtracker => {
+                web    => 'https://github.com/briang/p5-bit-twiddling/issues'
+            },
+            homepage   => 'https://github.com/briang/p5-bit-twiddling',
+            repository => {
+                type   => 'git',
+                url    => 'git://github.com/briang/p5-bit-twiddling.git',
+                web    => 'https://github.com/briang/p5-bit-twiddling',
+            },
+        },
+    },
 );
