@@ -6,7 +6,7 @@ use strict;  use warnings;  use autodie qw/:all/;
 
 use Inline Config =>
   disable => 'clean_after_build',
-  name    => 'XS::Wrap';
+  name    => 'Bit::Twiddling';
 
 use Inline C => <<'EOC';
 int count_set_bits(long v) {

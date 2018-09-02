@@ -26,5 +26,5 @@ WriteMakefile(
     PREREQ_PM => {
     },
     dist  => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
-    clean => { FILES => 'XS-Wrap-*' },
+    clean => { FILES => 'Bit-Twiddling-*' },
 );
