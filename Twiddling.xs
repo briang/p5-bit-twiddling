@@ -1,7 +1,6 @@
 #include "EXTERN.h"
 #include "perl.h"
 #include "XSUB.h"
-#include "INLINE.h"
 
 int count_set_bits(long v) {
     int c;
