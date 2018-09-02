@@ -2,8 +2,6 @@
 
 #:TAGS:
 
-use 5.022;
-
 use strict;  use warnings;
 
 BEGIN { # XXX
