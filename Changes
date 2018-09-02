@@ -1,5 +1,8 @@
 Revision history for Bit::Twiddling
 
+0.06    2018-09-02
+        add a link to HitHub issues for bug reporting
+
 0.05    2018-09-02
         Fix broken tests on Windows
         add TODO
