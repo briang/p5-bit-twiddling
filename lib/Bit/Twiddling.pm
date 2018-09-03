@@ -116,7 +116,7 @@ Brian Greenfield <briang at cpan dot org>
 
 =head1 REPOSITORY
 
-XXX github
+L<https://github.com/briang/p5-bit-twiddling>
 
 =head1 BUGS
 
