@@ -20,7 +20,7 @@ WriteMakefile(
         # 'Inline::C' => '0'
     },
     TEST_REQUIRES => {
-        'Test::More' => '0',
+        'Test::More' => '0.88',
         'Test::Warn' => '0',
         'Config'     => '0',
     },
