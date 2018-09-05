@@ -9,11 +9,11 @@ Bit::Twiddling - Low-level bit-twiddling hacks
 
 =head1 VERSION
 
-Version 0.08
+Version 0.10
 
 =cut
 
-our $VERSION = '0.08';
+our $VERSION = '0.10';
 
 =head1 SYNOPSIS
 
