@@ -11,12 +11,14 @@ Bit::Twiddling - Low-level bit-twiddling hacks
 
 Version 0.10
 
+=for html
+<img src="https://travis-ci.org/briang/p5-bit-twiddling.svg?branch=master" alt="TravisCI Status"/>
+
 =cut
 
 our $VERSION = '0.10';
 
 =head1 SYNOPSIS
-
     use Bit::Twiddling 'count_set_bits';
     my $number = 0b1111_0001;
     my $set_bits = count_set_bits($number); # 5
