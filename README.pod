@@ -1,5 +1,11 @@
 =pod
 
+=for HTML <a href="https://travis-ci.org/briang/bit-twiddling"><img src="https://travis-ci.org/briang/bit-twiddling.svg?branch=master"></a>
+
+=for HTML <a href="https://ci.appveyor.com/project/briang/bit-twiddling"><img src="https://ci.appveyor.com/api/projects/status/github/briang/bit-twiddling?branch=master&svg=true"></a>
+
+=for HTML <a href='https://coveralls.io/github/briang/bit-twiddling?branch=master'><img src='https://coveralls.io/repos/github/briang/bit-twiddling/badge.svg?branch=master' alt='Coverage Status' /></a>
+
 =head1 Bit::Twiddling
 
 Version 0.10
