@@ -1,6 +1,10 @@
-Bit-Twiddling version 0.10
+=pod
 
-INSTALLATION
+=head1 Bit::Twiddling
+
+Version 0.10
+
+=head2 INSTALLATION
 
 To install this module, run the following commands:
 
@@ -13,12 +17,12 @@ Or, just use your favorite CPAN client
 
     cpanm Bit::Twiddling
 
-DEPENDENCIES
+=head2 DEPENDENCIES
 
 This module requires a C compiler, but has no other build
 dependencies. For testing, Test::Warn is required.
 
-COPYRIGHT AND LICENCE
+=head2 COPYRIGHT AND LICENCE
 
 Copyright (C) 2018, Brian Greenfield
 
